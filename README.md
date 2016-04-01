@@ -11,7 +11,7 @@ This utility has only been tested for [the free web demo](http://logic.ly/demo/)
  1. Install [AHK (AutoHotkey)](https://autohotkey.com/).
  2. Open up `logicly-faster.ahk` in AHK. (The installer may have already associated .ahk files accordingly. If not, right-click and "Open with..."
  
-    ![Logic.ly Faster Demo GIF](https://raw.githubusercontent.com/fyodorjung/logicly-faster/master/demo-open-the-script.png)
+    ![Logic.ly Faster Demo GIF](https://raw.githubusercontent.com/fyodorjung/logicly-faster/master/demo-opening-the-script.png)
     
     If you see a green "H" icon in your systray (on the Windows taskbar, near the clock), then you've succeeded, probably.
     
@@ -25,7 +25,7 @@ This utility has only been tested for [the free web demo](http://logic.ly/demo/)
  
 ### Notes
 
-Don't get scared off by AHK. AHK is just a lightweight utility for automation actions on Windows. (If you've ever worked with Excel macros, like that.) For example, with AHK, you can write a script that goes, _"Whenever Ctrl+Alt+H is pressed, open up my browser and go to [http://hasthelargehadroncolliderdestroyedtheworldyet.com](http://hasthelargehadroncolliderdestroyedtheworldyet.com)`."_ Another thing AHK can do though, is automate mouse movements! So we can write a script that goes, _"Move the mouse to (a,b), click, and while holding click (to drag), move the mouse to (x,y), and let go."_ and so on.
+Don't get scared off by AHK. AHK is just a lightweight utility for automating actions on Windows. (If you've ever worked with Excel macros, it's like that.) For example, with AHK, you can write a script that goes, _"Whenever Ctrl+Alt+H is pressed, open up my browser and go to [http://hasthelargehadroncolliderdestroyedtheworldyet.com](http://hasthelargehadroncolliderdestroyedtheworldyet.com)."_ Another thing AHK can do though, is automate mouse movements. So we can write a script that goes, _"Move the mouse to (a,b), click, and while holding click (to drag), move the mouse to (x,y), and let go."_ and so on. That's basically how this utility does what it does, faster than you.
 
 ### Tips
 
@@ -37,7 +37,9 @@ These aren't related to this utility, but perhaps helpful any Logic.ly user.
 
 ### Support
 
-Email me; should be on [my profile](https://github.com/fyodorjung). I'll respond within `2 ^ (CurrentYear - 2015) * 24` hours, with a probability of less than 1.
+ - If the utility is missing a few connections here and there, try these things. (1) Open up `logicly-faster.ahk` in Notepad or whatever editor you'd like, find the line `LogiclySexySpeed := 20`, and increase that number, to say, 100. If that worked, then work your way down until you find the fastest your machine can handle without missing nodes. (2) Are you trying to hook up alternating nodes on a component? If so, are you selecting the first and last nodes of that component? If so, that would be your problem. If you're trying to connect 8 nodes on a 16-node component, for example, you need to select the first and the 15th nodes, not the first and the 16th nodes. (3) See below:
+ 
+ - Email me; should be on [my profile](https://github.com/fyodorjung). I'll respond within `2 ^ (CurrentYear - 2015) * 24` hours, with a probability of less than 1.
 
 ### Contribute!
 
